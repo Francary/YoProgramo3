@@ -1,21 +1,54 @@
 <html>
     <body>
         <script language="javascript" type="text/javascript">
-           
-            document.write("Hola Mundo! XD <br><br>")
-            //Comentario
+            <!--
+            document.write("Hola Mundo! XD  Practicando<br><br>")
+            //Comentario los saltos de lineas son con <br>
 
                    
            let a=15;
-           let b=2;
+           let b=20;
            let mod =a+b;
            document.write(mod);
+
+           // Busqueda en JavaScript
+
+           let arreglo = [10, 11, 3, 20];
+           
+                     // Array Filtrer
+
+           let mayorQueDiez = arreglo.filter(element => element > 10);
+           console.log(mayorQueDiez) // resultado esperado: [11, 20]
+           document.write(mayorQueDiez);
+
+                    // Array find ( Busca el primer elemento que cumpla la condicion )
+
+           let existeElementoMayorQueDiez = arreglo.find(element => element > 10);
+           console.log(existeElementoMayorQueDiez) // resultado esperado: 11
+
+                    //Array includes
+           let incluyeVeinte = arreglo.includes(20);
+
+            console.log(incluyeVeinte) // resultado esperado: true
+
+            // Array Index
+
+            let indiceDeTres = arreglo.indexOf(3);
+
+            console.log(indiceDeTres) // resultado esperado: 2
+
+          /* let arreglo = [10,11,3,20,5];
+           let mayorQueDiez = arreglo.filter(element => element > 10);
+           console.log(mayorQueDiez) */
+
+
+        //var estado = (edad>=18)?"adulto":"menor";
            
         var JSONObj = {};
         var JSONObj = { "nombrelibro":"El hacedor", "precio":500 };
            
            
-        
+            -->
         </script>
     </body>
 
