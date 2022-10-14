@@ -1,6 +1,6 @@
 let message: string ='Hello World Probando 3.0'
 console.log(message);
-let nombre: string = "Mateo";
+let nombre: string = "Perla";
 const mensajePractica = `Mi nombre es ${nombre} Soy nuevo en TypeScript.`;
 console.log(mensajePractica)
 
@@ -9,7 +9,7 @@ let mensaje1: string = `Mi nombre es ${nombre2} Estoy practicando TypeScript`;
 console.log(mensaje1);
 
 let cuadro: string= `Esto es una Prueba de Alerta que invento ${nombre2}`;
-alert(cuadro);  
+alert(cuadro); 
 
 class Persona {
     nombre:string;

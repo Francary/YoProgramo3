@@ -11,7 +11,7 @@ let c = 80;
 let recursos = ['memoria', 'disco', 'procesador'];
 let message = 'Hello World Probando 3.0';
 console.log(message);
-let nombre = "Mateo";
+let nombre = "Perla";
 const mensajePractica = `Mi nombre es ${nombre} Soy nuevo en TypeScript.`;
 console.log(mensajePractica);
 let nombre2 = "Francary Molina";
@@ -19,6 +19,7 @@ let mensaje1 = `Mi nombre es ${nombre2} Estoy practicando TypeScript`;
 console.log(mensaje1);
 let cuadro = `Esto es una Prueba de Alerta que invento ${nombre2}`;
 alert(cuadro);
+console.error(cuadro);
 class Persona {
     constructor(nombre, apellido) {
         this.nombre = nombre;
