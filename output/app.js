@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 let a;
 let b;
-let c = 25;
+let c = 80;
 let recursos = ['memoria', 'disco', 'procesador'];
 let message = 'Hello World Probando 3.0';
 console.log(message);
@@ -158,3 +158,16 @@ class Aereoplano {
         return mensaje;
     }
 }
+const gente = {
+    nombre: 'Perla',
+    edad: 33,
+    direccion: {
+        calle: 'San Martin ',
+        pais: 'Argentina ',
+        ciudad: ' Capital Federal '
+    },
+    mostrarDireccion() {
+        return this.nombre + ' , ' + this.direccion.ciudad + ' , ' + this.direccion.pais;
+    }
+};
+console.log(gente.mostrarDireccion());

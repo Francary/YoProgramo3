@@ -88,6 +88,7 @@ class Persona {
    console.log("El resultado de la resta es "+opercaionR.Resultado);
    alert("El resultado de la resta es "+opercaionR.Resultado);
 
+
 // Practica de Aereoplano
 
 class Turbina
@@ -152,7 +153,7 @@ class Helice
     }
     public ToString()
     {
-        return this.numHelices +"  Helices";
+        return this.numHelices + "  Helices";
     }
 }
 
@@ -165,7 +166,7 @@ class Alas
     }
     public ToString()
     {
-        return this.numAla +"  Las Alas";
+        return this.numAla + "  Las Alas";
     }
 }
 class TrenDeAterrizaje
@@ -177,7 +178,7 @@ class TrenDeAterrizaje
     }
     public ToString()
     {
-        return this.numTrenAterrizaje +"  Los Trenes";
+        return this.numTrenAterrizaje + "  Los Trenes";
     }
 }
 
@@ -186,7 +187,7 @@ class Aereoplano
     private helice: Helice ;
     private trenAterrizaje: TrenDeAterrizaje ;
     private alas: Alas ;
-    private cubierta:Cubierta;
+    private cubierta: Cubierta;
     constructor( phelice:Helice, pTrenAterrizaje:TrenDeAterrizaje, pAlas:Alas, pCubierta:Cubierta)
     {
         this.helice = phelice;
@@ -204,3 +205,29 @@ class Aereoplano
         return mensaje;
     }
 }
+// Practica de Interfaces 
+
+interface IPersona {
+    nombre: string;
+    edad: number;
+    direccion: {
+        calle: string;
+        pais: string;
+        ciudad: string;
+    },
+    mostrarDireccion: ()=>string;
+}
+
+const gente: IPersona ={
+    nombre:'Perla',
+    edad: 33,
+    direccion:{
+        calle:'San Martin ',
+        pais: 'Argentina ',
+        ciudad: ' Capital Federal '
+    },
+    mostrarDireccion(){
+        return this.nombre+ ' , ' +this.direccion.ciudad+' , ' +this.direccion.pais;
+    }
+}
+console.log(gente.mostrarDireccion());
