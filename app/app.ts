@@ -1,7 +1,7 @@
-let message: string ='Hello World Probando 3.0'
+let message: string ='Hello World Probando 4.0'
 console.log(message);
 
-let nombre: string = "Perla";
+let nombre: string = "Perla Carvajal ";
 const mensajePractica = `Mi nombre es ${nombre} Soy nuevo en TypeScript.`;
 console.log(mensajePractica)
 
@@ -42,7 +42,7 @@ class Persona {
     }
    }  
    let personaDecora = new PersonaDecorador();
-   personaDecora.Saludar();
+   // personaDecora.Saludar(); ---- > Los Decoradores dan errores pero aun lo muestra en el Log 
 
    // Uso de una Super Clase 
 
