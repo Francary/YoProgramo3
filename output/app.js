@@ -19,7 +19,6 @@ let mensaje1 = `Mi nombre es ${nombre2} Estoy practicando TypeScript`;
 console.log(mensaje1);
 let cuadro = `Esto es una Prueba de Alerta que invento ${nombre2}`;
 alert(cuadro);
-console.error(cuadro);
 class Persona {
     constructor(nombre, apellido) {
         this.nombre = nombre;
@@ -28,16 +27,21 @@ class Persona {
 }
 let persona = new Persona("Luis", "Puma");
 console.log(persona);
+// Decorador de Clases
 function DecoradorPersona(target) {
-    console.log(target);
+    target.prototype.Saludar = function () {
+        console.log("Hola Decorador");
+    };
 }
-let Persona2 = class Persona2 {
+let PersonaDecorador = class PersonaDecorador {
     constructor() {
     }
 };
-Persona2 = __decorate([
+PersonaDecorador = __decorate([
     DecoradorPersona
-], Persona2);
+], PersonaDecorador);
+let personaDecora = new PersonaDecorador();
+personaDecora.Saludar();
 // Uso de una Super Clase 
 class Operacion {
     constructor() {
@@ -157,6 +161,7 @@ class Aereoplano {
         mensaje += this.trenAterrizaje.ToString();
         mensaje += this.cubierta.ToString();
         return mensaje;
+        console.log(mensaje);
     }
 }
 const gente = {

@@ -1,5 +1,6 @@
 let message: string ='Hello World Probando 3.0'
 console.log(message);
+
 let nombre: string = "Perla";
 const mensajePractica = `Mi nombre es ${nombre} Soy nuevo en TypeScript.`;
 console.log(mensajePractica)
@@ -27,15 +28,21 @@ class Persona {
    let persona = new Persona("Luis","Puma");
    console.log(persona);
 
+   // Decorador de Clases
    function DecoradorPersona(target:Function){
-    console.log(target);
-   }
-   @DecoradorPersona
-   class Persona2{
+        target.prototype.Saludar = function(){
+        console.log("Hola Decorador");
+        }
+    } 
+    @DecoradorPersona
+    
+   class PersonaDecorador {
     constructor(){
 
     }
-   }
+   }  
+   let personaDecora = new PersonaDecorador();
+   personaDecora.Saludar();
 
    // Uso de una Super Clase 
 
@@ -202,9 +209,11 @@ class Aereoplano
         mensaje += this.alas.ToString();
         mensaje += this.trenAterrizaje.ToString();
         mensaje += this.cubierta.ToString();
-        return mensaje;
+        return mensaje;  
+        console.log(mensaje);
     }
 }
+
 // Practica de Interfaces 
 
 interface IPersona {
