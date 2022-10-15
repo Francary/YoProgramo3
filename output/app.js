@@ -11,7 +11,7 @@ let c = 80;
 let recursos = ['memoria', 'disco', 'procesador'];
 let message = 'Hello World Probando 4.0';
 console.log(message);
-let nombre = "Perla Carvajal Peralta";
+let nombre = "Carvajal Perla";
 const mensajePractica = `Mi nombre es ${nombre} Soy nuevo en TypeScript.`;
 console.log(mensajePractica);
 let nombre2 = "Francary Molina";
