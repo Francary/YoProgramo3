@@ -1,7 +1,7 @@
 let message: string ='Hello World Probando 4.0'
 console.log(message);
 
-let nombre: string = "Perla Carvajal ";
+let nombre: string = "Perla Carvajal Peralta";
 const mensajePractica = `Mi nombre es ${nombre} Soy nuevo en TypeScript.`;
 console.log(mensajePractica)
 
