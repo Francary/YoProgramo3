@@ -17,7 +17,7 @@ console.log(mensajePractica);
 let nombre2 = "Francary Molina";
 let mensaje1 = `Mi nombre es ${nombre2} Estoy practicando TypeScript`;
 console.log(mensaje1);
-let cuadro = `Esto es una Prueba de Alerta que invento ${nombre2}`;
+let cuadro = `Esto es una Alerta de Diciembre ${nombre2}`;
 alert(cuadro);
 class Persona {
     constructor(nombre, apellido) {

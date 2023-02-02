@@ -9,7 +9,7 @@ let nombre2: string = "Francary Molina";
 let mensaje1: string = `Mi nombre es ${nombre2} Estoy practicando TypeScript`;
 console.log(mensaje1);
 
-let cuadro: string= `Esto es una Prueba de Alerta que invento ${nombre2}`;
+let cuadro: string= `Esto es una Alerta de Diciembre ${nombre2}`;
 alert(cuadro); 
 
 class Persona {
